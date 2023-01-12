@@ -7,6 +7,8 @@ from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFacto
 # Authenticate to Twitter
 auth = tweepy.OAuthHandler("consumer_key", "consumer_secret")
 auth.set_access_token("access_token", "access_secret")
+# change consumer_key, consumer_secret, access_token, access_secret according to yours
+
 
 # Create API object
 api = tweepy.API(auth, wait_on_rate_limit=True)
