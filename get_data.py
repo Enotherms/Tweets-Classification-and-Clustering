@@ -5,8 +5,8 @@ from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
 
 # Authenticate to Twitter
-auth = tweepy.OAuthHandler("iY5MfEfoi5yhPmGxzLBw1qrj2", "rtYEB1iov2rmipIBUJ5kYLb7fwHGfQZabjlwkYvWJC1KwFEFw6")
-auth.set_access_token("2731103342-pbooVbgbCAwRQXVplrLhLOZqpMdOenScJkynUs6", "vD0biQhr5ATvC6kPOb86P8K6YWaM7cTdj9FoYqm1HksMc")
+auth = tweepy.OAuthHandler("consumer_key", "consumer_secret")
+auth.set_access_token("access_token", "access_secret")
 
 # Create API object
 api = tweepy.API(auth, wait_on_rate_limit=True)
