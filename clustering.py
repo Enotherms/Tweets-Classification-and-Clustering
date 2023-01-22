@@ -18,11 +18,11 @@ kmeans.fit(X)
 prediction=kmeans.predict(X)
 prediction
 
-# Mengelompokkan setiap tweet ke dalam cluster yang sesuai
+# Grouping each tweet into the appropriate cluster
 clusters = kmeans.predict(X)
 data['cluster'] = clusters
 
-#Menampilkan hasil clustering
+#print clustering result
 print(data.groupby('cluster').size())
 print("\n")
 for i in range(0,prediction.size):
